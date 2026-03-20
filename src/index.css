@@ -1,0 +1,110 @@
+/* 1. DECLARAÇÃO DAS FONTES (Ensina o navegador) */
+@font-face {
+    font-family: "circular-web";
+    src: url('/fonts/circularweb-book.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'general';
+    src: url('/fonts/general.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'robert-medium';
+    src: url('/fonts/robert-medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'robert-regular';
+    src: url('/fonts/robert-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'zentry-regular';
+    src: url('/fonts/zentry-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'JetSet';
+    src: url('/fonts/Jet Set.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'JetSetItalic';
+    src: url('/fonts/Jet Set Italic.ttf') format('truetype');
+}
+
+/* 2. IMPORTAÇÃO DO TAILWIND V4 */
+@import "tailwindcss";
+
+/* 3. CONFIGURAÇÃO DO TEMA (Cria as classes font-...) */
+@theme {
+    --font-circular: "circular-web", sans-serif;
+    --font-general: "general", sans-serif;
+    --font-robert-medium: "robert-medium", sans-serif;
+    --font-robert: "robert-regular", sans-serif;
+    --font-zentry: "zentry-regular", sans-serif;
+    --font-jetset: "JetSet", sans-serif; /* obs: os espaços não contam do arquivo */
+    --font-jetset-italic: "JetSetItalic", sans-serif;
+
+    /* O Amarelo 'Graffiti' (normalmente usado
+    no menu e lata de spray.)*/
+    --color-yellow-50: #EADC00;
+    --color-yellow-75: #FAFF40;
+    --color-jsr-yellow: #fbbf24;
+    --color-jsr-yellow-dark: #d97706;
+
+    /* O laranja do background e do Beat */
+    --color-jsr-orange-50: #fff7ed;
+    --color-jsr-orange-100: #ffedd5;
+    --color-jsr-orange-300: #fdba74;
+    --color-jsr-orange-500: #f97316;
+    --color-jsr-orange-600: #ea580c;
+
+    /* O Azul/Verde Vibrante (estilo Gum/Patinete) */
+    --color-jsr-cyan: #22d3ee;
+    --color-jsr-blue-dark: #1e3a8a;
+
+    /* Cores de background e contraste (Estilo Y2K/Sega) */
+    --color-jsr-bg: #dfdff0;
+    --color-jsr-black: #010101;
+    --color-jsr-white: #ffffff;
+}
+@layer base {
+    body {
+        width: 100dvw;
+        /* Define a largura total baseada na tela do usuário */
+        overflow-x: hidden;
+        /* Esconde a barra de rolagemhorizontal chata */
+        @apply bg-white;
+        /* Aplica a cor de fundo blue-50 que criei no @theme */
+        @apply font-jetset
+        /* Define a fonte padrão 'general' para o site */
+    }
+}
+    /* "@font face" é usado para ensinar o navegador
+          como exibir uma fonte que não está instalada
+           no computador do 4usuário */
+
+    /* @font-face: as fontes precisam ser as primeiras informações a ser
+     colocadas para evitar que o texto "pisque" com a fonte
+     errada ao carregar.*/
+
+    /*  @import "tailwindcss" substitui as três linhas
+        que eram usadas antigamente para importar
+        a biblioteca. (@tailwind, components, utilities*/
+
+    /* @theme é onde eu crio os meu atalhos para acessar no css
+        */
+
+    /* "--font-JetSet:" é onde cria a classe automaticamente pelo
+        tailwind da font-zentry.
+        --color-yellow-50: #EADC00 cria classes de paleta de cores
+         com isso podendo utilizar quantas variações eu quiser.   */
+
+    /*  bg-yellow-50 (para o fundo).
+
+        text-yellow-50 (para o texto).
+
+        border-yellow-50 (para a borda).
+     */
