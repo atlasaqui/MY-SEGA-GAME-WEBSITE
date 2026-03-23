@@ -8,7 +8,7 @@ const Hero = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [loadedVideos, setLoadedVideos] = useState(0);
 
-    const totalVideos = 5 ;
+    const totalVideos = 5;
     const nextVideoRef = useRef(null);
 
     const handleVideoLoad = () => {
@@ -37,7 +37,7 @@ const Hero = () => {
         setCurrentIndex(upcomingVideoIndex);
     }
 
-    const getVideoSrc = (index) => `videos/hero-${index}.mp4`;
+    const getVideoSrc = (index) => `videos/jetsethero-${index}.mp4`;
 
     return (
         <div className="relative h-dvh w-screen overflow-x-hidden">
