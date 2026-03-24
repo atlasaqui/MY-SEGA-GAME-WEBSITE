@@ -129,6 +129,25 @@ CSS */
     --font-zentry: "zentry-regular", sans-serif;
     --font-jetset: "JetSet", sans-serif;
 
+    /* --- FAMÍLIA LARANJA (Inspirado no Beat) --- */
+    --color-jsr-orange-light: #ffbd4a;  /* Laranja amarelado */
+    --color-jsr-orange: #ff8a00;        /* Laranja vibrante principal */
+    --color-jsr-orange-dark: #cc5500;   /* Sombra de graffiti */
+
+    /* --- FAMÍLIA AMARELA (Inspirado no Menu/Spray) --- */
+    --color-jsr-yellow: #eadc00;        /* O seu yellow-50 */
+    --color-jsr-yellow-neon: #faff40;   /* O seu yellow-75 */
+    --color-jsr-gold: #c6a600;          /* Amarelo queimado */
+
+    /* --- FAMÍLIA VERDE (Inspirado na Gum/Vibe Urbana) --- */
+    --color-jsr-green-lime: #adff2f;    /* Verde limão ácido */
+    --color-jsr-green: #32cd32;         /* Verde "Radio" */
+    --color-jsr-teal: #008080;          /* Verde azulado escuro */
+
+    /* --- CORES DE CONTRASTE --- */
+    --color-jsr-blue-electric: #22d3ee; /* Azul dos patins */
+    --color-jsr-pink: #ff00ff;          /* Rosa choque (detalhes) */
+
     /* Cores Jet Set Radio */
     --color-yellow-50: #EADC00;
     --color-yellow-75: #FAFF40;
@@ -269,6 +288,13 @@ CSS */
          */
     }
 
+    .hero-headingincase {
+        text-transform: uppercase;
+        font-family: var(--font-zentry);
+        font-weight: 900;
+        font-size: 5.5rem; /* text-5xl */
+    }
+
     .special-font b {
         font-family: "zentry-regular";
         font-feature-settings: "ss01" on;
@@ -403,7 +429,7 @@ CSS */
         /* display: inline-block: Permite que o loader se comporte como uma
          letra/ícone, podendo ser centralizado facilmente com text-center no pai.
 
-         animation: spin78236: nde as bolinhaFaz o quadrado invisível os estão
+         animation: spin78236: onde as bolinhaFaz o quadrado invisível os estão
           rodar sempre. */
     }
 

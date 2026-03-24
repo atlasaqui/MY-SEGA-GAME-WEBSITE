@@ -1,6 +1,9 @@
 import React from 'react'
 import { useState, useRef } from 'react';
-
+import Button from './Button';
+import { TiLocationArrow } from "react-icons/ti";
+import gsap from 'gsap';
+import { useGSAP } from "@gsap/react";
 
 const Hero = () => {
     const [currentIndex, setCurrentIndex] = useState(1);
@@ -18,24 +21,64 @@ const Hero = () => {
 
     const upcomingVideoIndex = (currentIndex % totalVideos) + 1;
 
-    /* O Que upcomingVideoIndex faz: ele tenta dividir:
-      0 % 4 = 0 + 1 => 1
-      1 % 4 = 1 + 1 => 2
-      2 % 4 = 2 + 1 => 3
-      3 % 4 = 3 + 1 => 4
-      4 % 4 = 4 + 1 => 1
+    /* const [currentIndex, setCurrentIndex] = useState(1);
+       const totalVideos = 5;
+       const upcomingVideoIndex = (currentIndex % totalVideos) + 1; ]
 
-      NO CASO quando finalizar o "Modular Operator"
-      o resto será zero e então irá começar de novo
-      começando o loop com '1'.
+        currentIndex: É o vídeo que você está vendo
+        no fundo (background) agora.
 
-      */
+        totalVideos = 5: Avisa ao código que você tem
+        os arquivos do 1 ao 5
+
+        upcomingVideoIndex: Essa é a mágica do Operador
+        Modular (%).Se o currentIndex for 5, a conta
+        fica: 5 % 5 (resto zero) + 1 = 1.
+        Isso garante que o site nunca tente carregar um
+        "video-6" que não existe; ele sempre volta para o 1.
+
+
+   */
+
 
     const handleMiniVdClick = () => {
         setHasClicked(true);
 
         setCurrentIndex(upcomingVideoIndex);
+
+        /* Aqui está o segredo: O vídeo do meio não "cresce"
+           fisicamente para virar o fundo. Na verdade, o que
+           acontece é uma troca de papéis instantânea:
+
+           1- O currentIndex muda para o valor do upcomingVideoIndex.
+           2- O React reconstrói o componente.
+           3- O vídeo que estava no Fundo (Background) muda o endereço
+            (src) para o novo índice.
+           */
     }
+    useGSAP(() => {
+        if(hasClicked) {
+            gsap.set('#next-video', { visibility: 'visible' });
+
+            gsap.to('#next-video', {
+                transformOrigin: 'center center',
+                scale: 1,
+                width: '100%',
+                height: '100%',
+                duration: 1,
+                ease: 'power1.inOut',
+                onStart: () => nextVideoRef.current.play(),
+            })
+            gsap.from('#current-video', {
+                transformOrigin: 'center center',
+                scale: 0,
+                duration: 1.5,
+                ease: 'power1.inOut'
+
+            })
+        }
+
+    }, {dependencies: [currentIndex], revertOnUpdate: true})
 
     const getVideoSrc = (index) => `videos/jetsethero-${index}.mp4`;
 
@@ -104,6 +147,22 @@ const Hero = () => {
                     <div onClick={handleMiniVdClick}
                          className="origin-center scale-50 opacity-0
                     transition-all duration-500 ease-in hover:scale-100 hover:opacity-100">
+                        {/* mask-clip-path: Essa classe
+                         (que eu defini no CSS) é o que dá o formato
+                         especial (como um diamante ou hexágono) ao
+                         vídeo do meio.
+
+                         upcomingVideoIndex no src: Note que o vídeo que
+                         aparece no meio não é o mesmo que está no fundo.
+                         Ele já está mostrando o "próximo". É como um spoiler
+                         do que vai acontecer se você clicar
+
+                         hover:scale-100: Quando você passa o mouse,
+                         ele aumenta de tamanho e fica visível, criando
+                         o feedback visual de "clique aqui"
+
+                        */
+                        }
                         <video
                             ref ={nextVideoRef}
                             src={getVideoSrc
@@ -141,11 +200,34 @@ const Hero = () => {
                     onLoadedData={handleVideoLoad}
                 />
             </div>
+            <h1 className="special-font hero-heading absolute bottom-1
+            right-5 z-10 text-jsr-yellow"> THE REALITY<b> IS</b> PUNK</h1>
             <div>
+            <div className="absolute left-0 top-0 z-40 size-full pointer-events-none">
+           <div className="mt-50 px-5 sm:px-10">
 
+             <h1 className="hero-headingincase absolute top-0 font-JetSet text-jsr-yellow">Jet<b>Set</b>Radio
+             </h1>
 
-            </div>
+               <p className="absolute left-15 top-28 mb-1 max-w-112 font-JetSet text-white text-xl">
+                   Go to the Street <br /> Bring life to the city with its own art. </p>
+
+           </div>
+
         </div>
+    </div>
+            <div className="absolute left-18 top-47 z-40 size-full pointer-events-none">
+                <Button
+                    id="watch-trailer"
+                    title="Watch Trailer"
+                    leftIcon={<TiLocationArrow />}
+                    containerClass="!bg-yellow-300 flex-center gap-1"
+                />
+                <h1 className="special-font hero-heading absolute bottom-1
+            right-5 z-10 text-black"> THE REALITY<b> IS</b> PUNK</h1>
+            </div>
+
+</div>
 
     )
 }
