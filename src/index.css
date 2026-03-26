@@ -292,6 +292,12 @@ CSS */
         text-transform: uppercase;
         font-family: var(--font-zentry);
         font-weight: 900;
+        font-size: 7.5rem; /* text-5xl */
+    }
+    .hero-headingothercase {
+        text-transform: uppercase;
+        font-family: var(--font-zentry);
+        font-weight: 900;
         font-size: 5.5rem; /* text-5xl */
     }
 

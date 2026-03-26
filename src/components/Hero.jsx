@@ -1,9 +1,19 @@
 import React from 'react'
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Button from './Button';
 import { TiLocationArrow } from "react-icons/ti";
 import gsap from 'gsap';
 import { useGSAP } from "@gsap/react";
+import Loader from './Loader';
+
+import { ScrollTrigger} from 'gsap/all'
+
+/* Para usar a biblioteca do gsap preciso importar:
+    import gsap from 'gsap';
+    import { useGSAP } from "@gsap/react";
+*/
+
+gsap.registerPlugin(ScrollTrigger)
 
 const Hero = () => {
     const [currentIndex, setCurrentIndex] = useState(1);
@@ -56,6 +66,10 @@ const Hero = () => {
             (src) para o novo índice.
            */
     }
+    useEffect(() => {
+        setIsLoading(false);
+    })
+
     useGSAP(() => {
         if(hasClicked) {
             gsap.set('#next-video', { visibility: 'visible' });
@@ -80,12 +94,50 @@ const Hero = () => {
 
     }, {dependencies: [currentIndex], revertOnUpdate: true})
 
+    useGSAP(() => {
+        gsap.set('#video-frame', {
+            clipPath: 'polygon(6% 48%, 100% 15%, 79% 100%, 3% 89%)',
+            /*
+            esse é o formato do clipPath do
+            balão maior.
+            */
+
+        })
+        gsap.from("#video-frame", {
+            clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+            borderRadius: "0% 0% 0% 0%",
+            ease: "power1.inOut",
+            scrollTrigger: {
+                trigger: "#video-frame",
+                start: "center center",
+                end: "bottom center",
+                scrub: true,
+
+                /*
+                Esse gsap é responsavel pela transição
+                do balão dechat menor para o maior.
+                */
+            }
+        })
+    })
+
     const getVideoSrc = (index) => `videos/jetsethero-${index}.mp4`;
 
     return (
         <div className="relative h-dvh w-screen overflow-x-hidden">
-            <div id="video-frame" className="relative z-10 h-dvh w-screen
-        overflow-hidden rounded-lg color-jsr-bg">
+            {isLoading && (
+                <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-black">
+                    {/* Mudei para bg-black para combinar com o estilo do novo loader neon */}
+
+                    <Loader />
+
+                </div>
+            )}
+
+            <div id="video-frame"
+                 className="relative z-10 h-dvh w-screen
+                 overflow-hidden rounded-lg color-jsr-bg"
+            >
 
                 {/* Classe Tailwind */} {/* Classe CSS */}
 
@@ -142,12 +194,14 @@ const Hero = () => {
                 {/* Aplica a cor de fundo
                 personalizada do projeto. */}
 
-                <div className="mask-clip-path absolute-center absolute
+
+                <div>
+                    <div className="mask-clip-path absolute-center absolute
                 z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
-                    <div onClick={handleMiniVdClick}
-                         className="origin-center scale-50 opacity-0
+                        <div onClick={handleMiniVdClick}
+                             className="origin-center scale-50 opacity-0
                     transition-all duration-500 ease-in hover:scale-100 hover:opacity-100">
-                        {/* mask-clip-path: Essa classe
+                            {/* mask-clip-path: Essa classe
                          (que eu defini no CSS) é o que dá o formato
                          especial (como um diamante ou hexágono) ao
                          vídeo do meio.
@@ -162,73 +216,93 @@ const Hero = () => {
                          o feedback visual de "clique aqui"
 
                         */
-                        }
-                        <video
-                            ref ={nextVideoRef}
-                            src={getVideoSrc
-                            (upcomingVideoIndex)}
-                            loop
-                            muted
-                            id="current-video"
-                            className="size-64 origin-center scale-150 object-cover object-center"
-                            onLoadedData={handleVideoLoad}
+                            }
+                            <video
+                                ref ={nextVideoRef}
+                                src={getVideoSrc
+                                (upcomingVideoIndex)}
+                                loop
+                                muted
+                                id="current-video"
+                                className="size-64 origin-center scale-150 object-cover object-center"
+                                onLoadedData={handleVideoLoad}
 
+                            />
+                        </div>
+                    </div>
+                    <video
+                        ref={nextVideoRef}
+                        src={getVideoSrc(currentIndex + 1)}
+                        loop
+                        muted
+                        id="next-video"
+                        className="absolute-center invisible absolute z-20
+                size-64 object-cover object-center"
+                        onLoadedData={handleVideoLoad}
+
+                    />
+                    <video
+                        src={getVideoSrc(currentIndex === totalVideos - 1
+                            ? 1 : currentIndex)}
+                        autoPlay
+                        loop
+                        muted
+                        className="absolute left-0 top-0 size-full
+                    object-cover object-center"
+                        onLoadedData={handleVideoLoad}
+                    />
+                </div>
+
+                <h1 className="special-font hero-headingothercase absolute bottom-5 right-15 z-40 text-jsr-orange">
+                    REALITY <b> IS </b> PUNK
+                </h1>
+
+                <div className="absolute left-0 top-0 z-40 size-full pointer-events-none">
+
+                    <div className="mt-50 px-5 sm:px-10">
+                        <div>
+                        <h1 className="hero-headingincase absolute top-10 left-8 text-jsr-teal">Jet<b>Set</b>Radio
+                        </h1>
+                        <h1 className="hero-headingincase absolute top-10 text-jsr-yellow">Jet<b>Set</b>Radio
+                        </h1>
+                        </div>
+
+                        <p className="absolute left-15 top-50 mb-1 max-w-112 font-JetSet text-white text-xl">
+                            Ride on the Street <br /> Bring life to the city with its own art. </p>
+                        {/* esse '<p>'(parágrafo) eu responsavel pelo texto
+                   suporte do heading que é o 'JETSETRADIO' ambos estão
+                   conectado em uma única div.
+                */}
+                        <div className="absolute left-13 top-70 pointer-events-auto">
+                        <Button
+                            id="watch-trailer"
+                            title="Watch Trailer"
+                            leftIcon={<TiLocationArrow />} //aqui é o q vai definir o 'icon' do botão.
+
+                            containerClass="!bg-yellow-300 flex-center gap-1 pointer-events-auto" /*1- o container define a aparência do botão
+                                                                       !bg-yellow-300: O símbolo ! (important)
+                                                                        garante que essa cor ganhe de qualquer outra
+                                                                        cor padrão que o componente tente aplicar.
+
+                                                                        2- É uma classe utilitária (eu costumizei no meu index.css)
+                                                                        que centraliza o ícone e o texto
+                                                                        dentro do botão.
+
+                                                                        3- gap-1: Cria um pequeno espaço entre o ícone da seta (TiLocationArrow)
+                                                                        e o texto "Watch Trailer" para eles não ficarem grudados.
+                                                                      */
                         />
+                        </div>
                     </div>
                 </div>
-                <video
-                    ref={nextVideoRef}
-                    src={getVideoSrc(currentIndex + 1)}
-                    loop
-                    muted
-                    id="next-video"
-                    className="absolute-center invisible absolute z-20
-                size-64 object-cover object-center"
-                    onLoadedData={handleVideoLoad
-
-                    }
-
-                />
-                <video
-                    src={getVideoSrc(currentIndex === totalVideos - 1
-                        ? 1 : currentIndex)}
-                    autoPlay
-                    loop
-                    muted
-                    className="absolute left-0 top-0 size-full
-                    object-cover object-center"
-                    onLoadedData={handleVideoLoad}
-                />
             </div>
-            <h1 className="special-font hero-heading absolute bottom-1
-            right-5 z-10 text-jsr-yellow"> THE REALITY<b> IS</b> PUNK</h1>
-            <div>
-            <div className="absolute left-0 top-0 z-40 size-full pointer-events-none">
-           <div className="mt-50 px-5 sm:px-10">
 
-             <h1 className="hero-headingincase absolute top-0 font-JetSet text-jsr-yellow">Jet<b>Set</b>Radio
-             </h1>
-
-               <p className="absolute left-15 top-28 mb-1 max-w-112 font-JetSet text-white text-xl">
-                   Go to the Street <br /> Bring life to the city with its own art. </p>
-
-           </div>
+            <h1 className="special-font hero-headingothercase absolute bottom-5 right-15 z-0 text-black">
+                REALITY<b> IS </b>PUNK
+            </h1>
 
         </div>
-    </div>
-            <div className="absolute left-18 top-47 z-40 size-full pointer-events-none">
-                <Button
-                    id="watch-trailer"
-                    title="Watch Trailer"
-                    leftIcon={<TiLocationArrow />}
-                    containerClass="!bg-yellow-300 flex-center gap-1"
-                />
-                <h1 className="special-font hero-heading absolute bottom-1
-            right-5 z-10 text-black"> THE REALITY<b> IS</b> PUNK</h1>
-            </div>
 
-</div>
-
-    )
-}
+    );
+};
 export default Hero
