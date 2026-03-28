@@ -1,7 +1,7 @@
-# 🛼 Jet Set Radio Reimagined
+# 🌟 Jet Set Radio Reimagined 🌟
 
 <p align="center">
-  <img src="caminho/para/seu/wallpaper.png" alt="Jet Set Radio Wallpaper" width="500px" style="border-radius: 10px; border: 2px solid #eadc00;" />
+  <img src="https://i.pinimg.com/1200x/96/35/6e/96356e164e7834a196dc8765e3d805c1.jpg" alt="Jet Set Radio Wallpaper" width="500px" style="border-radius: 10px; border: 2px solid #eadc00;" />
 </p>
 
 ---
