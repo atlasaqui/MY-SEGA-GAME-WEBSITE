@@ -26,12 +26,17 @@
       <change afterPath="$PROJECT_DIR$/public/fonts/Mechapunk Bold Italic.otf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/fonts/Mechapunk.otf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/fonts/Punk University.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/About-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/About-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/About-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/About-4.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/About.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Loader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +135,7 @@
       <workItem from="1774288875161" duration="59132000" />
       <workItem from="1774558907050" duration="5949000" />
       <workItem from="1774627906428" duration="6909000" />
+      <workItem from="1774677633360" duration="346000" />
     </task>
     <task id="LOCAL-00001" summary="Configurando as fontes no tailwind e colocando todos os assets do projeto.">
       <option name="closed" value="true" />

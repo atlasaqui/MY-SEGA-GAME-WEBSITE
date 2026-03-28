@@ -52,11 +52,11 @@ const About = () => {
 
                 {/* TEXTO CORRIGIDO: Agora posicionado no fundo do container #clip */}
                 <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-full max-w-96 text-center px-5 md:max-w-[34rem] text-black z-30">
-                    <p className="font-circular text-lg leading-relaxed">
+                    <p className="font-JetSet text-lg leading-relaxed">
                         Graffiti, inline skating, and rebel attitude. <br />
                         Jet Set Radio is the SEGA classic that turned urban art into a vibrant visual manifesto.
                     </p>
-                    <p className="mt-4 font-black uppercase italic text-black">
+                    <p className="mt-4 font-JetSet uppercase italic text-black">
                         Tokyo-to is calling. Join the crew on PC & Consoles.
                     </p>
                 </div>
