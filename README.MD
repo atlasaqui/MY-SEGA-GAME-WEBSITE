@@ -42,17 +42,17 @@ Para alcançar essa performance e visual dinâmico, o projeto foi construído ut
 ```bash
 git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
 
-2️⃣ Entrar no Território
+**2 Entrar no Território
 Agora, acesse a pasta que acabou de ser criada para começar a mexer nos arquivos:
 
 Bash
 cd seu-repositorio
-3️⃣ Carregar o Spray (Instalar Dependências)
+**3 Carregar o Spray (Instalar Dependências)
 O projeto usa várias ferramentas modernas. Este comando vai baixar todas as bibliotecas necessárias automaticamente:
 
 Bash
 npm install
-4️⃣ Ligar a rádio! (Iniciar Servidor)
+**4 Ligar a rádio! (Iniciar Servidor)
 Com tudo pronto, é hora de colocar o site para rodar. Digite o comando abaixo:
 
 Bash
