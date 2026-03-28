@@ -51,6 +51,9 @@ Focada em narrativa visual utilizando **GSAP ScrollTrigger**.
 <div align="center">
 
 ### 📼 Demo: About Section
+
+https://github.com/user-attachments/assets/e80162d4-23ea-4189-a135-91e72341d9f8
+
 </div>
 
 ---
