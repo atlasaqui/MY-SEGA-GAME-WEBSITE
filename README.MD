@@ -52,30 +52,38 @@ npm run dev
 
 ---
 
-<div style="background-color: #1a1a1a; border-radius: 10px; padding: 20px; margin-bottom: 20px; border: 1px solid #333;">
-  <h3 style="color: #eadc00; margin-top: 0; font-family: sans-serif;">🎬 1. Seção Hero</h3>
-  <p style="color: #cccccc; line-height: 1.6; font-family: sans-serif;">
-    O coração dinâmico da página. O código do <strong>Hero</strong> gerencia um carrossel contínuo de 5 vídeos em looping através de cálculo modular (<code style="background-color: #2a2a2a; padding: 2px 5px; border-radius: 4px; color: #ff8a00;">currentIndex % totalVideos</code>).
-  </p>
-  <p style="color: #cccccc; line-height: 1.6; font-family: sans-serif;">
-    Quando você clica na miniatura central, o <strong>React</strong> e o <strong>GSAP</strong> trabalham juntos: o vídeo do fundo é trocado instantaneamente enquanto uma animação de escala dá a ilusão de que a tela foi preenchida pelo novo clipe. Também conta com um efeito de máscara poligonal via CSS (<code style="background-color: #2a2a2a; padding: 2px 5px; border-radius: 4px; color: #ff8a00;">clipPath</code>) que se expande durante a rolagem da página por meio do <strong>ScrollTrigger</strong>.
-  </p>
-  <div align="center" style="margin-top: 15px; background-color: #111; padding: 15px; border-radius: 8px;">
-    <span style="color: #888; font-style: italic; font-family: sans-serif;">📼 [Arraste e solte o vídeo demonstrativo da Seção Hero aqui]</span>
-  </div>
+## 🎬 1. Seção Hero
+
+> 💡 **O coração dinâmico da página**
+> 
+> O código do **Hero** gerencia um carrossel contínuo de 5 vídeos em looping através de cálculo modular (`currentIndex % totalVideos`).
+> 
+> Quando você clica na miniatura central, o **React** e o **GSAP** trabalham juntos: o vídeo do fundo é trocado instantaneamente enquanto uma animação de escala dá a ilusão de que a tela foi preenchida pelo novo clipe. Também conta com um efeito de máscara poligonal via CSS (`clipPath`) que se expande durante a rolagem da página por meio do **ScrollTrigger**.
+
+<div align="center">
+  
+| 📼 Espaço para o Vídeo Demonstrativo da Seção Hero |
+| :---: |
+| _[Arraste e solte o seu arquivo de vídeo aqui para gerar o player]_ |
+
 </div>
 
-<div style="background-color: #1a1a1a; border-radius: 10px; padding: 20px; border: 1px solid #333;">
-  <h3 style="color: #eadc00; margin-top: 0; font-family: sans-serif;">🛹 2. Seção About</h3>
-  <p style="color: #cccccc; line-height: 1.6; font-family: sans-serif;">
-    Focada em imersão e narrativa visual. Esta seção utiliza fortemente o plugin <strong>ScrollTrigger</strong> do GSAP para criar um efeito de fixação de tela (<code style="background-color: #2a2a2a; padding: 2px 5px; border-radius: 4px; color: #ff8a00;">pin: true</code>).
-  </p>
-  <p style="color: #cccccc; line-height: 1.6; font-family: sans-serif;">
-    Conforme o usuário rola a página, a tela trava e a imagem de Tokyo-To (que começa pequena e com bordas arredondadas no centro) vai se expandindo até preencher 100% da largura e altura do monitor. É nela também que inserimos o componente de títulos animados que quebra os textos e os joga na tela com rotação 3D.
-  </p>
-  <div align="center" style="margin-top: 15px; background-color: #111; padding: 15px; border-radius: 8px;">
-    <span style="color: #888; font-style: italic; font-family: sans-serif;">📼 [Arraste e solte o vídeo demonstrativo da Seção About aqui]</span>
-  </div>
+---
+
+## 🛹 2. Seção About
+
+> 💡 **Focada em imersão e narrativa visual**
+> 
+> Esta seção utiliza fortemente o plugin **ScrollTrigger** do GSAP para criar um efeito de fixação de tela (`pin: true`).
+> 
+> Conforme o usuário rola a página, a tela trava e a imagem de Tokyo-To (que começa pequena e com bordas arredondadas no centro) vai se expandindo até preencher 100% da largura e altura do monitor. É nela também que inserimos o componente de títulos animados que quebra os textos e os joga na tela com rotação 3D.
+
+<div align="center">
+
+| 📼 Espaço para o Vídeo Demonstrativo da Seção About |
+| :---: |
+| _[Arraste e solte o seu arquivo de vídeo aqui para gerar o player]_ |
+
 </div>
 
 ---
