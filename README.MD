@@ -20,7 +20,7 @@ Lançado originalmente para o SEGA Dreamcast, **Jet Set Radio** é um verdadeiro
 
 > 💭 **Nostalgia & Hiperfoco:** Este projeto nasceu de um momento de hiperfoco com jogos antigos. Decidi resgatar algo que fez parte de uma fase muito importante da minha vida quando eu era pequeno pra usar em estudo. 
 > 
->  **O Objetivo:** Unir coisas que eu gosto, aprender e me divertir, mas aplicando um padrão de desenvolvimento totalmente profissional.
+> 🎯 **O Objetivo:** Unir coisas que eu gosto, aprender e me divertir, mas aplicando um padrão de desenvolvimento totalmente profissional.
 
 ---
 
@@ -35,55 +35,10 @@ Siga o tutorial abaixo para carregar o seu spray e colocar o site para rodar!
 
 ---
 
-1️⃣ Clonar o Repositório
+### 1️⃣ Clonar o Repositório
 Primeiro, você precisa trazer os arquivos do jogo para o seu computador. Abra o seu terminal e digite:
 
 ```bash
 git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
 
-2️⃣ Entrar no Território
-cd seu-repositorio
-
-3️⃣ Carregar o Spray (Instalar Dependências)
-npm install
-
-4️⃣ Ligar a Rádio! (Iniciar Servidor)
-npm run dev
-
----
-
-## 🎬 1. Seção Hero
-
-> 💡 **O coração dinâmico da página**
-> 
-> O código do **Hero** gerencia um carrossel contínuo de 5 vídeos em looping através de cálculo modular (`currentIndex % totalVideos`).
-> 
-> Quando você clica na miniatura central, o **React** e o **GSAP** trabalham juntos: o vídeo do fundo é trocado instantaneamente enquanto uma animação de escala dá a ilusão de que a tela foi preenchida pelo novo clipe. Também conta com um efeito de máscara poligonal via CSS (`clipPath`) que se expande durante a rolagem da página por meio do **ScrollTrigger**.
-
-<div align="center">
-  
-| 📼 Espaço para o Vídeo Demonstrativo da Seção Hero |
-| :---: |
-| _[Arraste e solte o seu arquivo de vídeo aqui para gerar o player]_ |
-
-</div>
-
----
-
-## 🛹 2. Seção About
-
-> 💡 **Focada em imersão e narrativa visual**
-> 
-> Esta seção utiliza fortemente o plugin **ScrollTrigger** do GSAP para criar um efeito de fixação de tela (`pin: true`).
-> 
-> Conforme o usuário rola a página, a tela trava e a imagem de Tokyo-To (que começa pequena e com bordas arredondadas no centro) vai se expandindo até preencher 100% da largura e altura do monitor. É nela também que inserimos o componente de títulos animados que quebra os textos e os joga na tela com rotação 3D.
-
-<div align="center">
-
-| 📼 Espaço para o Vídeo Demonstrativo da Seção About |
-| :---: |
-| _[Arraste e solte o seu arquivo de vídeo aqui para gerar o player]_ |
-
-</div>
-
----
+🎬 1. Seção Hero💡 O coração dinâmico da páginaO código do Hero gerencia um carrossel contínuo de 5 vídeos em looping através de cálculo modular (currentIndex % totalVideos).Quando você clica na miniatura central, o React e o GSAP trabalham juntos: o vídeo do fundo é trocado instantaneamente enquanto uma animação de escala dá a ilusão de que a tela foi preenchida pelo novo clipe. Também conta com um efeito de máscara poligonal via CSS (clipPath) que se expande durante a rolagem da página por meio do ScrollTrigger.<div align="center">📼 Espaço para o Vídeo Demonstrativo da Seção Hero[Arraste e solte o seu arquivo de vídeo aqui para gerar o player]
