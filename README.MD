@@ -30,31 +30,8 @@ Lançado originalmente para o SEGA Dreamcast, **Jet Set Radio** é um verdadeiro
 
 </div>
 
-Para alcançar essa performance e visual dinâmico, o projeto foi construído utilizando:
-*  **React** (Biblioteca para interfaces)
-*  **JavaScript** (Lógica de programação)
-*  **Tailwind CSS v4** (Estilização ultra-rápida de última geração)
-*  **GSAP** (Motor para animações complexas e fluidas)
-
-### 👣 Passo a Passo para rodar o projeto localmente:
-
-**1. Clone o repositório:**
-```bash
-git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
-
-**2 Entrar no Território
+2️⃣ Entrar no Território
 Agora, acesse a pasta que acabou de ser criada para começar a mexer nos arquivos:
 
 Bash
 cd seu-repositorio
-**3 Carregar o Spray (Instalar Dependências)
-O projeto usa várias ferramentas modernas. Este comando vai baixar todas as bibliotecas necessárias automaticamente:
-
-Bash
-npm install
-**4 Ligar a rádio! (Iniciar Servidor)
-Com tudo pronto, é hora de colocar o site para rodar. Digite o comando abaixo:
-
-Bash
-npm run dev
-🌐 Sintonize na frequência certa: Após rodar o comando acima, o terminal vai te dar um endereço. Geralmente é o http://localhost:5173. Basta segurar Ctrl e clicar nele (ou copiar e colar no seu navegador) para ver a mágica acontecer!
