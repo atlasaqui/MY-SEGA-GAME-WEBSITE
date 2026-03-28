@@ -56,6 +56,10 @@ https://github.com/user-attachments/assets/e80162d4-23ea-4189-a135-91e72341d9f8
 
 </div>
 
+<div align="center">
+Desenvolvido com ⚡ por [Victor]
+</div>
+
 ---
 
 ## 🛠️ Tecnologias Utilizadas
@@ -85,6 +89,3 @@ npm install
 4️⃣ Ligar a Rádio!
 Bash
 npm run dev
-<div align="center">
-Desenvolvido com ⚡ por [Victor]
-
