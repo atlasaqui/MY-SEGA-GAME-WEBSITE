@@ -33,7 +33,7 @@ $currentIndex \pmod{totalVideos}$.
 * **Masking:** Efeito de máscara poligonal via `clip-path` que se expande conforme o scroll.
 
 <div align="center">
-
+https://github.com/user-attachments/assets/438b171c-1478-4490-94c6-b99cfa7ecb18
 ### 📼 Demo: Hero Section
 </div>
 
