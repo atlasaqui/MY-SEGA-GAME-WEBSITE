@@ -256,7 +256,7 @@ const Hero = () => {
                     <h1 className="special-font hero-headingothercase absolute bottom-5 right-15 z-40 text-jsr-yellow">
                         REALITY <b> IS </b> PUNK
                     </h1>
-                    <h1 className="special-font hero-headingothercase absolute bottom-3 right-15 z-39 text-jsr-green">
+                    <h1 className="special-font hero-headingothercase absolute bottom-3 right-15 z-39 text-jsr-green-lime">
                         REALITY <b> IS </b> PUNK
                     </h1>
                 </div>

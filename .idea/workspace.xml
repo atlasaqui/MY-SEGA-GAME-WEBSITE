@@ -5,37 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fbbfac8-d569-431b-9da8-6a0847fd33a4" name="Changes" comment="renoomei o arquivo de video.">
-      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Cyberpunks Italic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Cyberpunks Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Cyberpunks.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 01.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 02.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 03.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 04.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 05.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 06.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 07.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 08.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 09.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 10.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 11.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 12.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 13.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 14.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Mechapunk Bold Italic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Mechapunk.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Punk University.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/About-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/About-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/About-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/About-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/About.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/About-5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/About-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AnimatedTitle.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loader.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +110,8 @@
       <workItem from="1774288875161" duration="59132000" />
       <workItem from="1774558907050" duration="5949000" />
       <workItem from="1774627906428" duration="6909000" />
-      <workItem from="1774677633360" duration="346000" />
+      <workItem from="1774677633360" duration="1492000" />
+      <workItem from="1774679247019" duration="13628000" />
     </task>
     <task id="LOCAL-00001" summary="Configurando as fontes no tailwind e colocando todos os assets do projeto.">
       <option name="closed" value="true" />
