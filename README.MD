@@ -6,7 +6,7 @@
 
 ---
 
-## 🎨 O que é Jet Set Radio?
+## 💫 O que é Jet Set Radio?
 
 </div>
 
@@ -14,13 +14,13 @@ Lançado originalmente para o SEGA Dreamcast, **Jet Set Radio** é um verdadeiro
 
 <div align="center">
 
-## 💡 Por que decidi fazer este projeto?
+## 💬 Por que decidi fazer este projeto?
 
 </div>
 
-> 💭 **Nostalgia & Hiperfoco:** Este projeto nasceu de um momento de hiperfoco com jogos antigos. Decidi resgatar algo que fez parte de uma fase muito importante da minha vida quando eu era pequeno. 
+> 💭 **Nostalgia & Hiperfoco:** Este projeto nasceu de um momento de hiperfoco com jogos antigos. Decidi resgatar algo que fez parte de uma fase muito importante da minha vida quando eu era pequeno pra usar em estudo. 
 > 
-> 🎯 **O Objetivo:** Unir a nostalgia à vontade de aprender e me divertir, mas aplicando um padrão de desenvolvimento totalmente profissional. É a fusão da essência rebelde do clássico da SEGA com as tecnologias mais modernas do mercado web.
+>  **O Objetivo:** Unir coisas que eu gosto, aprender e me divertir, mas aplicando um padrão de desenvolvimento totalmente profissional.
 
 ---
 
@@ -31,10 +31,10 @@ Lançado originalmente para o SEGA Dreamcast, **Jet Set Radio** é um verdadeiro
 </div>
 
 Para alcançar essa performance e visual dinâmico, o projeto foi construído utilizando:
-* ⚛️ **React** (Biblioteca para interfaces)
-* 📜 **JavaScript** (Lógica de programação)
-* 🎨 **Tailwind CSS v4** (Estilização ultra-rápida de última geração)
-* 🚀 **GSAP** (Motor para animações complexas e fluidas)
+*  **React** (Biblioteca para interfaces)
+*  **JavaScript** (Lógica de programação)
+*  **Tailwind CSS v4** (Estilização ultra-rápida de última geração)
+*  **GSAP** (Motor para animações complexas e fluidas)
 
 ### 👣 Passo a Passo para rodar o projeto localmente:
 
