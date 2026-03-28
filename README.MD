@@ -30,28 +30,29 @@ Lançado originalmente para o SEGA Dreamcast, **Jet Set Radio** é um verdadeiro
 
 </div>
 
-### 🕹️ Como Jogar? (Guia para Rodar Localmente)
+### 🕹️ Como rodar na sua máquina? (Guia para Rodar Localmente)
 Siga o tutorial abaixo para carregar o seu spray e colocar o site para rodar!
 
 ---
 
-### 1️⃣ Clonar o Repositório
+<h3>1️⃣ Clonar o Repositório</h3>
 Primeiro, você precisa trazer os arquivos do jogo para o seu computador. Abra o seu terminal e digite:
 
 ```bash
 git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
-2️⃣ Entrar no Território
+<h3>2️⃣ Entrar no Território</h3>
 Agora, acesse a pasta que acabou de ser criada para começar a mexer nos arquivos:
 
 Bash
 cd seu-repositorio
-3️⃣ Carregar o Spray (Instalar Dependências)
+<h3>3️⃣ Carregar o Spray (Instalar Dependências)</h3>
 O projeto usa ferramentas modernas. Este comando vai baixar todas as bibliotecas necessárias automaticamente:
 
 Bash
 npm install
-4️⃣ Ligar a Rádio! (Iniciar Servidor)
+<h3>4️⃣ Ligar a Rádio! (Iniciar Servidor)</h3>
 Com tudo pronto, é hora de colocar o site para rodar. Digite o comando abaixo:
 
 Bash
 npm run dev
+🌐 Sintonize na frequência certa: Após rodar o comando acima, o terminal vai te dar um endereço (geralmente http://localhost:5173). Basta segurar Ctrl e clicar nele para ver a mágica acontecer!
