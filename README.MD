@@ -35,17 +35,17 @@ Siga o tutorial abaixo para carregar o seu spray e colocar o site para rodar!
 
 ---
 
-<h3>1️⃣ Clonar o Repositório</h3>
+1️⃣ Clonar o Repositório
 Primeiro, você precisa trazer os arquivos do jogo para o seu computador. Abra o seu terminal e digite:
 
 ```bash
 git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
 
-<h3>2️⃣ Entrar no Território</h3>
+2️⃣ Entrar no Território
 cd seu-repositorio
 
-<h3>3️⃣ Carregar o Spray (Instalar Dependências)</h3>
+3️⃣ Carregar o Spray (Instalar Dependências)
 npm install
 
-<h3>4️⃣ Ligar a Rádio! (Iniciar Servidor)</h3>
+4️⃣ Ligar a Rádio! (Iniciar Servidor)
 npm run dev
