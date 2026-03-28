@@ -2,30 +2,53 @@
 
 # 🛹 ⚡ Jet Set Radio Reimagined ⚡ 🛹
 
-<img src="https://i.pinimg.com/1200x/96/35/6e/96356e164e7834a196dc8765e3d805c1.jpg" alt="Jet Set Radio Wallpaper" width="600px" style="border-radius: 15px; border: 4px solid #eadc00; box-shadow: 0px 10px 20px rgba(0,0,0,0.3);" />
+<img src="[https://i.pinimg.com/1200x/96/35/6e/96356e164e7834a196dc8765e3d805c1.jpg](https://i.pinimg.com/1200x/96/35/6e/96356e164e7834a196dc8765e3d805c1.jpg)" alt="Jet Set Radio Wallpaper" width="600px" style="border-radius: 15px; border: 4px solid #eadc00; box-shadow: 0px 10px 20px rgba(0,0,0,0.3);" />
 
-[![Licença](https://img.shields.io/github/license/seu-usuario/seu-repositorio?style=for-the-badge&color=eadc00)](LICENSE)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white)](https://greensock.com/)
+[![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
 ---
 
 ### "Understand the concept of love!" 🎧
-
-**Jet Set Radio Reimagined** é um tributo moderno ao clássico do SEGA Dreamcast. 
-Unindo a estética urbana do *Cel-Shading* e a cultura do graffiti com tecnologias de ponta do desenvolvimento web.
+**Jet Set Radio Reimagined** é um tributo moderno ao clássico do SEGA Dreamcast, unindo a estética urbana do *Cel-Shading* com animações de ponta.
 
 </div>
 
 ## 💫 O que é Jet Set Radio?
-
-Lançado originalmente para o SEGA Dreamcast, o jogo é um marco visual. Ele apresenta uma Tokyo-To estilizada, trilha sonora icônica (Hip-Hop, Funk, Eletrônica) e uma jogabilidade focada em expressão e rebeldia artística.
+Lançado para o Dreamcast, o jogo é um marco visual com Tokyo-To estilizada, trilha sonora icônica e cultura graffiti. Este projeto resgata essa vibe usando tecnologias web modernas.
 
 ## 💬 Por que este projeto?
+> 💭 **Nostalgia & Hiperfoco:** Um mergulho em memórias de infância transformado em um estudo de caso técnico de alto nível, aplicando padrões de desenvolvimento totalmente profissionais.
 
-> 💭 **Nostalgia & Hiperfoco:** Este projeto nasceu do desejo de resgatar uma estética que definiu minha infância, transformando essa paixão em um estudo de caso técnico de alto nível.
-> 
-> 🎯 **O Objetivo:** Unir design disruptivo com padrões de desenvolvimento profissionais e animações complexas.
+---
+
+## 🎬 Demonstração das Seções
+
+### 01. Seção Hero: O Coração Dinâmico 💡
+O Hero gerencia um carrossel contínuo de 5 vídeos em looping através de cálculo modular:
+`$currentIndex \pmod{totalVideos}$`.
+
+* **Interatividade:** Ao clicar na miniatura, o React e o GSAP trocam o background instantaneamente com uma animação de escala fluida.
+* **Masking:** Efeito de máscara poligonal via `clip-path` que se expande conforme o scroll.
+
+<div align="center">
+  <kbd>📼 Espaço para o Vídeo Demonstrativo da Seção Hero</kbd>
+  <br><em>(Arraste seu vídeo aqui)</em>
+</div>
+
+<br>
+
+### 02. Seção About: Imersão e Narrativa 💡
+Focada em narrativa visual utilizando **GSAP ScrollTrigger**.
+* **Pinning Effect:** A tela trava (`pin: true`) enquanto o usuário interage.
+* **Visual Expand:** A imagem de Tokyo-To expande do centro até preencher 100% da tela.
+* **3D Typography:** Títulos animados que fragmentam o texto e aplicam rotação 3D.
+
+<div align="center">
+  <kbd>📼 Espaço para o Vídeo Demonstrativo da Seção About</kbd>
+  <br><em>(Arraste seu vídeo aqui)</em>
+</div>
 
 ---
 
@@ -34,57 +57,28 @@ Lançado originalmente para o SEGA Dreamcast, o jogo é um marco visual. Ele apr
 | Ferramenta | Função |
 | :--- | :--- |
 | **React.js** | Core da aplicação e gerenciamento de estados. |
-| **GSAP + ScrollTrigger** | Orquestração de animações de scroll e timeline. |
-| **Tailwind CSS** | Estilização rápida e responsiva. |
-| **Framer Motion** | Transições de componentes e micro-interações. |
+| **GSAP** | Orquestração de animações complexas e ScrollTrigger. |
+| **Tailwind CSS** | Estilização urbana e responsividade. |
 
 ---
 
-## 🕹️ Guia de Instalação (Local)
+## 🕹️ Como rodar na sua máquina?
 
-Siga os passos abaixo para carregar seu spray e rodar a rádio na sua máquina:
+Siga o tutorial abaixo para carregar o seu spray e colocar o site para rodar!
 
-### 1️⃣ Clonar o Repositório
+1️⃣ Clonar o Repositório
 ```bash
-git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+git clone https://github.com/seu-usuario/seu-repositorio.git
 
+2️⃣ Entrar no Território
+Bash
 cd seu-repositorio
-
+3️⃣ Instalar Dependências
+Bash
 npm install
-
+4️⃣ Ligar a Rádio!
+Bash
 npm run dev
-
-🎬 1. Seção Hero
-
-💡 O coração dinâmico da página
-
-O código do Hero gerencia um carrossel contínuo de 5 vídeos em looping através de cálculo modular (currentIndex % totalVideos).
-
-Quando você clica na miniatura central, o React e o GSAP trabalham juntos: o vídeo do fundo é trocado instantaneamente enquanto uma animação de escala dá a ilusão de que a tela foi preenchida pelo novo clipe.
-
-Também conta com um efeito de máscara poligonal via CSS (clip-path) que se expande durante a rolagem da página por meio do ScrollTrigger.
-
 <div align="center">
-
-📼 Espaço para o Vídeo Demonstrativo da Seção Hero
-(Arraste e solte o seu arquivo de vídeo aqui para gerar o player)
-
+Desenvolvido com ⚡ por [Seu Nome]
 </div>
-🛹 2. Seção About
-
-💡 Focada em imersão e narrativa visual
-
-Esta seção utiliza fortemente o plugin ScrollTrigger do GSAP para criar um efeito de fixação de tela (pin: true).
-
-Conforme o usuário rola a página, a tela trava e a imagem de Tokyo-To (que começa pequena e com bordas arredondadas no centro) vai se expandindo até preencher 100% da largura e altura do monitor.
-
-É nela também que inserimos o componente de títulos animados que quebra os textos e os joga na tela com rotação 3D.
-
-<div align="center">
-
-📼 Espaço para o Vídeo Demonstrativo da Seção About
-(Arraste e solte o seu arquivo de vídeo aqui para gerar o player)
-
-</div> ```
-
-
