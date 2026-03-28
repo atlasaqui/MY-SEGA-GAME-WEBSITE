@@ -2,7 +2,7 @@
 
 # 🛹 ⚡ Jet Set Radio Reimagined ⚡ 🛹
 
-<img src="https://i.pinimg.com/1200x/96/35/6e/96356e164e7834a196dc8765e3d805c1.jpg" alt="Jet Set Radio Wallpaper" width="600px" style="border-radius: 15px; border: 4px solid #eadc00; box-shadow: 0px 10px 20px rgba(0,0,0,0.3);" />
+<img src="[https://i.pinimg.com/1200x/96/35/6e/96356e164e7834a196dc8765e3d805c1.jpg](https://i.pinimg.com/1200x/96/35/6e/96356e164e7834a196dc8765e3d805c1.jpg)" alt="Jet Set Radio Wallpaper" width="600px" style="border-radius: 15px; border: 4px solid #eadc00; box-shadow: 0px 10px 20px rgba(0,0,0,0.3);" />
 
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white)](https://greensock.com/)
@@ -27,14 +27,14 @@ Lançado para o Dreamcast, o jogo é um marco visual com Tokyo-To estilizada, tr
 
 ### 01. Seção Hero: O Coração Dinâmico 💡
 O Hero gerencia um carrossel contínuo de 5 vídeos em looping através de cálculo modular:
-`$currentIndex \pmod{totalVideos}$`.
+$currentIndex \pmod{totalVideos}$.
 
 * **Interatividade:** Ao clicar na miniatura, o React e o GSAP trocam o background instantaneamente com uma animação de escala fluida.
 * **Masking:** Efeito de máscara poligonal via `clip-path` que se expande conforme o scroll.
 
 <div align="center">
-  <kbd>📼 Espaço para o Vídeo Demonstrativo da Seção Hero</kbd>
-  <br><em>(Arraste seu vídeo aqui)</em>
+
+### 📼 Demo: Hero Section
 </div>
 
 <br>
@@ -46,8 +46,8 @@ Focada em narrativa visual utilizando **GSAP ScrollTrigger**.
 * **3D Typography:** Títulos animados que fragmentam o texto e aplicam rotação 3D.
 
 <div align="center">
-  <kbd>📼 Espaço para o Vídeo Demonstrativo da Seção About</kbd>
-  <br><em>(Arraste seu vídeo aqui)</em>
+
+### 📼 Demo: About Section
 </div>
 
 ---
@@ -66,7 +66,7 @@ Focada em narrativa visual utilizando **GSAP ScrollTrigger**.
 
 Siga o tutorial abaixo para carregar o seu spray e colocar o site para rodar!
 
-1️⃣ Clonar o Repositório
+### 1️⃣ Clonar o Repositório
 ```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
 
@@ -80,5 +80,5 @@ npm install
 Bash
 npm run dev
 <div align="center">
-Desenvolvido com ⚡ por [Seu Nome]
+Desenvolvido com ⚡ por [Victor]
 </div>
