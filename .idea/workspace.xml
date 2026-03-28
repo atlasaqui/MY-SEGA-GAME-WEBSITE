@@ -5,20 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fbbfac8-d569-431b-9da8-6a0847fd33a4" name="Changes" comment="renoomei o arquivo de video.">
-      <change afterPath="$PROJECT_DIR$/src/components/Loader.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Cyberpunks Italic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Cyberpunks Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Cyberpunks.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 01.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 02.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 03.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 04.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 05.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 06.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 07.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 08.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 09.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 10.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 11.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 12.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 13.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Hit me, punk! 14.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Mechapunk Bold Italic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Mechapunk.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Punk University.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/About.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/@gsap_react.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/@gsap_react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/gsap-bf4x_9_H.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/gsap-bf4x_9_H.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/gsap.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/gsap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Loader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loader.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,34 +55,34 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Node.js.Button.jsx.executor": "Debug",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js.Button.jsx.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Victor\IdeaProjects\JetSetProject\public\videos" />
       <recent name="C:\Users\Victor\IdeaProjects\JetSetProject\public\img" />
       <recent name="C:\Users\Victor\IdeaProjects\JetSetProject\public\fonts" />
+      <recent name="C:\Users\Victor\IdeaProjects\JetSetProject\public\videos" />
       <recent name="C:\Users\Victor\IdeaProjects\JetSetProject\public\audio" />
     </key>
   </component>
@@ -114,7 +127,9 @@
       <workItem from="1774282218821" duration="888000" />
       <workItem from="1774283323564" duration="794000" />
       <workItem from="1774284163748" duration="2423000" />
-      <workItem from="1774288875161" duration="54656000" />
+      <workItem from="1774288875161" duration="59132000" />
+      <workItem from="1774558907050" duration="5949000" />
+      <workItem from="1774627906428" duration="6909000" />
     </task>
     <task id="LOCAL-00001" summary="Configurando as fontes no tailwind e colocando todos os assets do projeto.">
       <option name="closed" value="true" />

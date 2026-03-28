@@ -252,16 +252,20 @@ const Hero = () => {
                         onLoadedData={handleVideoLoad}
                     />
                 </div>
-
-                <h1 className="special-font hero-headingothercase absolute bottom-5 right-15 z-40 text-jsr-orange">
-                    REALITY <b> IS </b> PUNK
-                </h1>
+                <div>
+                    <h1 className="special-font hero-headingothercase absolute bottom-5 right-15 z-40 text-jsr-yellow">
+                        REALITY <b> IS </b> PUNK
+                    </h1>
+                    <h1 className="special-font hero-headingothercase absolute bottom-3 right-15 z-39 text-jsr-green">
+                        REALITY <b> IS </b> PUNK
+                    </h1>
+                </div>
 
                 <div className="absolute left-0 top-0 z-40 size-full pointer-events-none">
 
                     <div className="mt-50 px-5 sm:px-10">
                         <div>
-                        <h1 className="hero-headingincase absolute top-10 left-8 text-jsr-teal">Jet<b>Set</b>Radio
+                        <h1 className="hero-headingincase absolute top-12 left-10 text-jsr-green">Jet<b>Set</b>Radio
                         </h1>
                         <h1 className="hero-headingincase absolute top-10 text-jsr-yellow">Jet<b>Set</b>Radio
                         </h1>

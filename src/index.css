@@ -1,5 +1,4 @@
 /* 1. DECLARAÇÃO DAS FONTES (Ensina o navegador) */
-/* @font-face: as fontes precisam ser as primeiras informações para evitar o "pulo" de fonte no carregamento. */
 @font-face {
     font-family: "circular-web";
     src: url('/fonts/circularweb-book.woff2') format('woff2');
@@ -30,13 +29,10 @@
 }
 
 /* 2. IMPORTAÇÃO DO TAILWIND V4 */
-/* @import "tailwindcss" substitui as antigas 3 linhas de importação. */
 @import "tailwindcss";
 
 /* 3. CONFIGURAÇÃO DO TEMA (Variáveis de Design) */
-/* @theme é onde crio os atalhos/variáveis que o Tailwind transformará em classes. */
 @theme {
-    /* Fontes */
     --font-circular: "circular-web", sans-serif;
     --font-general: "general", sans-serif;
     --font-robert-medium: "robert-medium", sans-serif;
@@ -45,113 +41,23 @@
     --font-jetset: "JetSet", sans-serif;
     --font-jetset-italic: "JetSetItalic", sans-serif;
 
-    /* O Amarelo 'Graffiti' (normalmente usado
-
- no menu e lata de spray.)*/
-
+    /* Cores Jet Set Radio Reais */
     --color-yellow-50: #EADC00;
-
     --color-yellow-75: #FAFF40;
-
     --color-jsr-yellow: #fbbf24;
-
     --color-jsr-yellow-dark: #d97706;
-
-
-
-    /* O laranja do background e do Beat */
-
     --color-jsr-orange-50: #fff7ed;
-
     --color-jsr-orange-100: #ffedd5;
-
     --color-jsr-orange-300: #fdba74;
-
     --color-jsr-orange-500: #f97316;
-
     --color-jsr-orange-600: #ea580c;
-
-
-
-    /* O Azul/Verde Vibrante (estilo Gum/Patinete) */
-
     --color-jsr-cyan: #22d3ee;
-
     --color-jsr-blue-dark: #1e3a8a;
-
-
-
-    /* Cores de background e contraste (Estilo Y2K/Sega) */
-
     --color-jsr-bg: #dfdff0;
-
     --color-jsr-black: #010101;
-
     --color-jsr-white: #ffffff;
 
-}
-
-/* 4. ESTILOS BASE */
-@layer base {
-    body {
-        width: 100dvw;
-        overflow-x: hidden;
-        background-color: var(--color-jsr-bg);
-        font-family: var(--font-jetset);
-    }
-}
-
-/* 5. UTILITÁRIOS AVANÇADOS (Expandidos para fácil entendimento) */
-/*Para garantir que nada se perca, eu fiz a fusão total do seu código do Tailwind 4 com todos os utilitários, animações e efeitos do Uiverse que você mandou.
-
-Abaixo, o código está escrito na forma tradicional (propriedades CSS separadas), para que você entenda o que cada classe faz, mas mantendo a compatibilidade total com o seu projeto.
-
-Seu index.css Completo e Adaptado (v4)
-
-CSS */
-/* 1. DECLARAÇÃO DAS FONTES */
-@font-face { font-family: "circular-web"; src: url('/fonts/circularweb-book.woff2') format('woff2'); }
-@font-face { font-family: 'general'; src: url('/fonts/general.woff2') format('woff2'); }
-@font-face { font-family: 'robert-medium'; src: url('/fonts/robert-medium.woff2') format('woff2'); }
-@font-face { font-family: 'robert-regular'; src: url('/fonts/robert-regular.woff2') format('woff2'); }
-@font-face { font-family: 'zentry-regular'; src: url('/fonts/zentry-regular.woff2') format('woff2'); }
-@font-face { font-family: 'JetSet'; src: url('/fonts/Jet Set.ttf') format('truetype'); }
-
-/* 2. IMPORTAÇÃO TAILWIND 4 */
-@import "tailwindcss";
-
-/* 3. CONFIGURAÇÃO DO TEMA */
-@theme {
-    --font-circular: "circular-web", sans-serif;
-    --font-general: "general", sans-serif;
-    --font-robert-medium: "robert-medium", sans-serif;
-    --font-robert: "robert-regular", sans-serif;
-    --font-zentry: "zentry-regular", sans-serif;
-    --font-jetset: "JetSet", sans-serif;
-
-    /* --- FAMÍLIA LARANJA (Inspirado no Beat) --- */
-    --color-jsr-orange-light: #ffbd4a;  /* Laranja amarelado */
-    --color-jsr-orange: #ff8a00;        /* Laranja vibrante principal */
-    --color-jsr-orange-dark: #cc5500;   /* Sombra de graffiti */
-
-    /* --- FAMÍLIA AMARELA (Inspirado no Menu/Spray) --- */
-    --color-jsr-yellow: #eadc00;        /* O seu yellow-50 */
-    --color-jsr-yellow-neon: #faff40;   /* O seu yellow-75 */
-    --color-jsr-gold: #c6a600;          /* Amarelo queimado */
-
-    /* --- FAMÍLIA VERDE (Inspirado na Gum/Vibe Urbana) --- */
-    --color-jsr-green-lime: #adff2f;    /* Verde limão ácido */
-    --color-jsr-green: #32cd32;         /* Verde "Radio" */
-    --color-jsr-teal: #008080;          /* Verde azulado escuro */
-
-    /* --- CORES DE CONTRASTE --- */
-    --color-jsr-blue-electric: #22d3ee; /* Azul dos patins */
-    --color-jsr-pink: #ff00ff;          /* Rosa choque (detalhes) */
-
-    /* Cores Jet Set Radio */
-    --color-yellow-50: #EADC00;
-    --color-yellow-75: #FAFF40;
-    --color-jsr-bg: #dfdff0;
+    /* Adições de Contraste e Suporte */
     --color-blue-50: #DFDFF0;
     --color-violet-300: #5d3fd3;
 }
@@ -166,310 +72,146 @@ CSS */
     }
 }
 
-/* 5. UTILITÁRIOS (ADAPTADOS E EXPLICADOS) */
+/* 5. UTILITÁRIOS AVANÇADOS */
 @layer utilities {
 
-    /* Borda suave com transparência */
+    /* --- NOVOS UTILS ADICIONADOS --- */
+
     .border-hsla {
-        border-width: 1px;
-        border-color: rgba(255, 255, 255, 0.2);
-        /* O que faz: Define uma borda fina (1px)
-           e usa a cor branca com 20% de opacidade
-           (0.2). */
-        /*Por que tô usando: O termo "HSLA" (ou RGBA aqui)
-          serve para criar bordas que parecem "vidro".
-          Em vez de um branco sólido gritante,
-          ela se mistura com o que estiver atrás,
-          dando um aspecto premium e suave. */
+        @apply border border-white/20;
     }
 
-    /* Botão de navegação com linha animada */
     .nav-hover-btn {
-        position: relative;
-        margin-left: 2.5rem; /* ms-10 */
-        font-family: var(--font-general);
-        font-size: 0.75rem; /* text-xs */
-        text-transform: uppercase;
-        color: var(--color-blue-50);
-        cursor: pointer;
-
-        /* position: relative Essencial. ele
-         avisa ao botão: "Qualquer coisa que eu
-         criar dentro de você com "position: absolute"
-         vai usar os seus limites como referência"
-         Sem isso, a linha animada fugiria para o topo
-         da página.
-         */
-
-        /* margin-left: 2.5rem: Cria o espaçamento entre
-        os botões no menu.*/
-
-        /* text-transform: uppercase: Força o texto a ficar
-         em letras maiúsculas, comum em menus de jogos.*/
-
+        @apply relative ms-10 font-general text-xs uppercase text-blue-50 after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white cursor-pointer;
     }
 
-    .nav-hover-btn::after {
-        content: "";
-        position: absolute;
-        bottom: -0.125rem;
-        left: 0;
-        height: 2px;
-        width: 100%;
-        background-color: #262626; /* neutral-800 */
-        transform: scaleX(0);
-        transform-origin: bottom right;
-        transition: transform 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
-
-        /* O :after cria um elemento "fanstasma" que não
-           existe no HTML, apenas no CSS
-
-           transform: scaleX(0) A linha está lá,mas sua largura
-           é zero.
-
-           cubic-bezier: Define uma curva de velocidade.
-           E em vez de uma animação "robótica", ela começa lenta,
-           acelera e termina suave.
-
-           .nav-hover -btn: hover::after (Animação da linha)
-            O truque: como o origin muda entre o estado normal
-            e o hover, a linha parece que "entra por um lado
-            e sai pelo outro".
-
-         */
+    .floating-nav {
+        @apply bg-black rounded-lg border;
     }
 
-    .nav-hover-btn:hover::after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-
-        /* O truque: Como o origin muda entre
-           o estado normal e o hover, a linha parece
-           que "entra por um lado e sai pelo outro".
-         */
-    }
-
-    /* Centralização e Layout */
     .absolute-center {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
+        @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
     }
 
     .flex-center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @apply flex justify-center items-center;
     }
 
-    /*(.absolute-center e .flex-center)
-
-    top/left: 50%: joga o objeto para o meio,
-    mas baseado no canto superior
-
-    translate(-50%, -50%) : Move o objeto metade
-    da sua própria largura e altura para trás,
-    centralizando-o perfeitamente pelo seu centro real.
-
-    A forma mais moderna de centralizar tudo que está
-    dentro de uma 'caixa'(container).*/
-    /* Títulos e Tipografia Especial */
-    .hero-heading {
-        text-transform: uppercase;
-        font-family: var(--font-zentry);
-        font-weight: 900;
-        font-size: 3rem; /* text-5xl */
-
-        /* hero-heading
-           configura o título principal. O font-weight: 900
-           (Black) deixa a fonte Zentry bem grossa e impactante.
-         */
-    }
-
-    .hero-headingincase {
-        text-transform: uppercase;
-        font-family: var(--font-zentry);
-        font-weight: 900;
-        font-size: 7.5rem; /* text-5xl */
-    }
-    .hero-headingothercase {
-        text-transform: uppercase;
-        font-family: var(--font-zentry);
-        font-weight: 900;
-        font-size: 5.5rem; /* text-5xl */
+    .mask-clip-path {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
     .special-font b {
         font-family: "zentry-regular";
         font-feature-settings: "ss01" on;
-
-        /* Isso aplica um estilo apenas ás palavras que eu
-           colocar dentro de uma tag <b> (negrito). O ss01
-           ativa o "Stylistic Set 01" da fonte, que geralmente
-           troca letras normais por versões decoradas.*/
     }
 
-    /* Animação de Palavras 3D */
+    .hero-heading {
+        @apply uppercase font-zentry font-black text-5xl sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem];
+    }
+
+    /* Ajuste crítico para a About Section */
+    .about-subtext {
+        @apply absolute bottom-[-80dvh] left-1/2 w-full max-w-96 -translate-x-1/2 text-center font-circular text-lg md:max-w-[34rem];
+    }
+
+    .about-image {
+        @apply absolute left-1/2 top-0 z-20 h-[60vh] w-96 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw];
+    }
+
+    .animated-title {
+        @apply flex flex-col gap-1 text-7xl uppercase leading-[.8] text-white sm:px-32 md:text-[6rem];
+    }
+
     .animated-word {
-        font-family: var(--font-zentry);
-        font-weight: 900;
-        opacity: 0;
+        @apply special-font font-zentry font-black opacity-0;
         transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
-        transform-origin: 50% 50% -150px;
+        transform-origin: 50% 50% -150px !important;
         will-change: opacity, transform;
-
-        /* animated-word (EFEITO 3D DE CINEMA)
-         translate3d e rotate: Define a posição
-         "de espera". A palavra está invisível
-         (opacity: 0), inclinada e "afundada"
-          no monitor (-60px).*/
-
-        /* transform-origin: ... -150px: Faz
-         a palavra girar em torno de um ponto
-          profundo na tela. Quando o GSAP
-           (JavaScript) mudar isso para
-           rotate(0), a palavra fará um
-           movimento circular para
-           aparecer.
-        */
     }
 
-    /* Formatos de Recorte (Clip-Paths) */
-    .mask-clip-path {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    /* Bento Grid Utils */
+    .bento-tilt_1 {
+        @apply relative border-hsla col-span-2 overflow-hidden rounded-md transition-transform duration-300 ease-out;
+    }
+
+    .bento-tilt_2 {
+        @apply relative col-span-1 row-span-1 overflow-hidden rounded-md transition-transform duration-300 ease-out;
+    }
+
+    .bento-title {
+        @apply uppercase md:text-6xl text-4xl font-black font-zentry;
+    }
+
+    /* Story Section Clip-Paths */
+    .story-img-container {
+        @apply relative md:h-dvh h-[90vh] w-full;
+        filter: url("#flt_tag");
     }
 
     .story-img-mask {
+        @apply absolute left-0 top-0 size-full overflow-hidden md:left-[20%] md:top-[-10%] md:size-4/5;
         clip-path: polygon(4% 0, 83% 21%, 100% 73%, 0% 100%);
     }
 
+    .story-img-content {
+        @apply absolute w-full md:h-dvh h-[50dvh] opacity-100 left-10 top-16 md:left-0 md:top-10 lg:left-[-300px] lg:top-[-100px];
+        transform: translate3d(0, 0, 0) rotateX(0) rotateY(0) rotateZ(0) scale(1);
+    }
+
+    /* Gallery & Contact Recortes */
     .sword-man-clip-path {
         clip-path: polygon(16% 0, 89% 15%, 75% 100%, 0 97%);
     }
 
-    /*clip-path: Funciona como uma máscara de recorte. O polygon define as
-     coordenadas (X Y) de cada ponta.
+    .contact-clip-path-1 {
+        clip-path: polygon(25% 0%, 74% 0, 69% 64%, 34% 73%);
+    }
 
-     story-img-mask: Cria aquele formato irregular, como um trapézio torto,
-      para dar o estilo "quebrado" do site.
-     */
+    .contact-clip-path-2 {
+        clip-path: polygon(29% 15%, 85% 30%, 50% 100%, 10% 64%);
+    }
+
+    /* --- MANTENDO SEUS UTILS DE TEXTO JSR --- */
+    .hero-headingincase {
+        @apply uppercase font-zentry font-black text-[7.5rem];
+    }
+    .hero-headingothercase {
+        @apply uppercase font-zentry font-black text-[5.5rem];
+    }
+
     /* 6. ANIMAÇÕES DO INDICADOR DE ÁUDIO */
     .indicator-line {
-        height: 0.25rem;
-        width: 1px;
-        border-radius: 9999px;
-        background-color: white;
-        transition: all 0.2s ease-in-out;
-
-        /* .indicator-line (O visualizer de Áudio)
-           Cria as barrinhas finas brancas que você
-           vê no botão de áudio
-        */
-
-        /* .three-body (O Loader 3D)
-           Utiliza variáveis CSS (--uib)
-           para que você possa controlar
-           o loader inteiro mudando apenas
-           um valor no topo. O resto das classes
-           (three-body__dot) cuidam das três
-           bolinhas girando.
-         */
+        @apply h-1 w-px rounded-full bg-white transition-all duration-200 ease-in-out;
     }
 
     .indicator-line.active {
         animation: indicator-line 0.5s ease infinite;
-
-        /* .indicator-line.active
-         e @keyframes indicator-line */
-        /* Esta parte cria aquele efeito de "equalizador
-           de música" (barrinhas subindo e descendo). */
-
-        /* Como funciona: Quando você adiciona a classe
-           active via JavaScript no seu componente de áudio,
-           a animação começa.
-
-            */
     }
 
     @keyframes indicator-line {
-        0%, 100% {
-            height: 4px;
-            transform: translateY(0);
-        }
-        50% {
-            height: 16px;
-            transform: translateY(-4px);
-        }
-
-        /* Como funciona: Quando você adiciona a classe
-           active via JavaScript no seu componente de áudio,
-           a animação começa.
-
-            O Truque: O translateY(-4px) é usado junto com
-            o aumento da altura (height: 16px) para que a
-            barra pareça estar crescendo para cima, em vez
-            de apenas esticar para baixo.
-
-            Dica: No meu código React, tem algo como
-            animation-delay. Isso serve para que cada
-            barrinha comece em um tempo diferente,
-            criando aquela "onda" de som.
-            */
-
-
+        0%, 100% { height: 4px; transform: translateY(0); }
+        50% { height: 16px; transform: translateY(-4px); }
     }
 
-    /* 7. LOADER THREE-BODY (UIVERSE) */
+    /* 7. LOADER THREE-BODY */
     .three-body {
         --uib-size: 35px;
         --uib-speed: 0.8s;
         --uib-color: var(--color-violet-300);
-        position: relative;
-        display: inline-block;
+        @apply relative inline-block;
         height: var(--uib-size);
         width: var(--uib-size);
         animation: spin78236 calc(var(--uib-speed) * 2.5) infinite linear;
-
-        /* display: inline-block: Permite que o loader se comporte como uma
-         letra/ícone, podendo ser centralizado facilmente com text-center no pai.
-
-         animation: spin78236: onde as bolinhaFaz o quadrado invisível os estão
-          rodar sempre. */
     }
 
     .three-body__dot {
-        position: absolute;
-        height: 100%;
-        width: 30%;
-
-        /* Por que 30%? Para que as bolinhas não
-         fiquem grudadas. Isso cria o espaçamento
-         necessário para elas orbitarem sem bater
-         uma na outra. */
+        @apply absolute h-full w-[30%];
     }
 
     .three-body__dot::after {
         content: "";
-        position: absolute;
-        height: 0%;
-        width: 100%;
-        padding-bottom: 100%;
+        @apply absolute h-0 w-full pb-[100%] rounded-full;
         background-color: var(--uib-color);
-        border-radius: 50%;
     }
 }
-/*O Segredo do padding-bottom: 100%: Como
-    o height está em 0%, o padding-bottom
-    baseado na largura (width: 100%) garante
-    que a bolinha seja sempre um círculo perfeito,
-    não importa o tamanho que você der ao loader
-    lá no topo.
-
-    Variável --uib-color: Note como ele usa a cor
-    que você definiu no @theme. Se você mudar o
-    violeta lá em cima, o loader muda de cor sozinho!*/
-
-/* Animações de wobble e spin do loader omitidas por brevidade,
-   mas devem permanecer iguais ao seu código original. */

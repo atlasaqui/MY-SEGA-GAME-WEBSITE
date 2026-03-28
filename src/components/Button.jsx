@@ -22,10 +22,6 @@ const Button = ({ title, id , rightIcon, leftIcon, containerClass }) => {
                  necessária para o texto, em vez de ocupar a tela
                  inteira.
 
-
-
-
-
              */}
             {leftIcon}
 
