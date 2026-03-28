@@ -47,3 +47,44 @@ Siga os passos abaixo para carregar seu spray e rodar a rádio na sua máquina:
 ### 1️⃣ Clonar o Repositório
 ```bash
 git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+
+cd seu-repositorio
+
+npm install
+
+npm run dev
+
+🎬 1. Seção Hero
+
+💡 O coração dinâmico da página
+
+O código do Hero gerencia um carrossel contínuo de 5 vídeos em looping através de cálculo modular (currentIndex % totalVideos).
+
+Quando você clica na miniatura central, o React e o GSAP trabalham juntos: o vídeo do fundo é trocado instantaneamente enquanto uma animação de escala dá a ilusão de que a tela foi preenchida pelo novo clipe.
+
+Também conta com um efeito de máscara poligonal via CSS (clip-path) que se expande durante a rolagem da página por meio do ScrollTrigger.
+
+<div align="center">
+
+📼 Espaço para o Vídeo Demonstrativo da Seção Hero
+(Arraste e solte o seu arquivo de vídeo aqui para gerar o player)
+
+</div>
+🛹 2. Seção About
+
+💡 Focada em imersão e narrativa visual
+
+Esta seção utiliza fortemente o plugin ScrollTrigger do GSAP para criar um efeito de fixação de tela (pin: true).
+
+Conforme o usuário rola a página, a tela trava e a imagem de Tokyo-To (que começa pequena e com bordas arredondadas no centro) vai se expandindo até preencher 100% da largura e altura do monitor.
+
+É nela também que inserimos o componente de títulos animados que quebra os textos e os joga na tela com rotação 3D.
+
+<div align="center">
+
+📼 Espaço para o Vídeo Demonstrativo da Seção About
+(Arraste e solte o seu arquivo de vídeo aqui para gerar o player)
+
+</div> ```
+
+
